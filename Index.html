@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SkyCast App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="weather-card">
+    <div class="search-bar">
+      <input type="text" id="locationInput" placeholder="Search City">
+      <button id="searchBtn">🔍</button>
+    </div>
+
+    <div id="mainWeather" class="hidden">
+      <div class="top">
+        <div class="location-date">
+          <p id="cityName">City</p>
+          <p id="date">Date</p>
+        </div>
+        <div class="temperature">
+          <h1><span id="temp">--</span>°C</h1>
+          <p id="condition">--</p>
+        </div>
+      </div>
+
+      <div class="middle">
+        <div class="icon-weather" id="iconWeather">🌦️</div>
+        <div class="details">
+          <p><strong>Humidity:</strong> <span id="humidity">--</span>%</p>
+          <p><strong>Wind:</strong> <span id="wind">--</span> km/h</p>
+        </div>
+      </div>
+
+      <div class="forecast">
+        <div class="day">05 Aug<br>🌧️<br>30°C</div>
+        <div class="day">06 Aug<br>☀️<br>30°C</div>
+        <div class="day">07 Aug<br>🌤️<br>30°C</div>
+        <div class="day">08 Aug<br>☁️<br>30°C</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
